@@ -1,0 +1,226 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+
+}
+
+html,body
+{
+    width: 100%;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+/* navbar starts */
+
+nav
+{
+    /* border: 1px solid red; */
+    padding: 20px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    box-shadow: 2px 0px 30px 10px rgba(225, 219, 219, 0.333);
+    background-color: white;
+}
+
+nav ul
+{
+    /* border: 8px solid green; */
+    display: inline;
+    margin-left: 365px;
+}
+
+nav ul li
+{
+    /* border: 1px solid yellow; */
+    display: inline;
+}
+
+nav .navbar-brand-logo
+{
+    margin-left: 90px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #24325d;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+nav ul li a
+{
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 35px;
+    color: #24325d;
+    transition: color .5s;
+    
+}
+
+nav ul li a:hover
+{
+    color: #006fbe;
+}
+/* navbar ends */
+
+/* Banner starts */
+
+.banner
+{
+    /* border: 2px solid red; */
+    height: 450px;
+    background-image: url("https://bootstrapmade.com/demo/templates/MeFamily/assets/img/slide/slide-1.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    animation-name: bannerimage;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+
+@keyframes bannerimage {
+    0%{background-image: url("https://bootstrapmade.com/demo/templates/MeFamily/assets/img/slide/slide-1.jpg");}
+    20%{background-image: url("https://bootstrapmade.com/demo/templates/MeFamily/assets/img/slide/slide-1.jpg");}
+    50%{background-image: url("https://bootstrapmade.com/demo/templates/MeFamily/assets/img/slide/slide-2.jpg");}
+    100%{background-image: url("https://bootstrapmade.com/demo/templates/MeFamily/assets/img/slide/slide-3.jpg");}
+}
+/* Banner ends */
+
+/* Family Info starts */
+
+.family-info
+{
+    /* border: 2px solid red; */
+    margin: 50px 120px;
+}
+.family-info h1
+{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.family-info h1::before
+{
+    content: "";
+    background-color: black;
+    display: block;
+    height: 1px;
+    width: 162px;
+    position: relative;
+    left: 463px;
+    top: 58px;
+}
+.family-info h1::after
+{
+    content: "";
+    background-color: #006fbe;
+    display: block;
+    height: 3px;
+    width: 38px;
+    position: relative;
+    left: 526px;
+    top: 8px;
+}
+
+
+.family-info .para
+{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.family-info .family-info-content
+{
+    /* border: 2px solid purple; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.family-info .family-info-content .family-image
+{
+    /* border: 2px solid green; */
+    width: 49%;
+}
+.family-info .family-info-content .family-image img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.family-info .family-info-content .family-text
+{
+    /* border: 2px solid yellow; */
+    width: 49%;
+}
+.family-info .family-info-content .family-text ul
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.family-info .family-info-content .family-text ul li
+{
+    line-height: 32px;
+    list-style-type: none;
+}
+
+.family-info .family-info-content .family-text .para1
+{
+    margin-bottom: 25px;
+
+}       
+.family-info .family-info-content .family-text a
+{
+    border: 2px solid #006fbe;
+    padding: 9px 34px;
+    color: #006fbe;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 6px;
+    transition: all .3s;
+}
+
+.family-info .family-info-content .family-text a:hover
+{
+    background-color: #006fbe;
+    color: white;
+}
+
+.family-info .fa-check{
+    color: #006fbe;
+}
+
+
+/* Family Info Ends */
+
+/* Scroll Arrow starts */
+
+.scroll-arrow
+{
+    background-color: #006fbe;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 98765;
+} 
+.scroll-arrow a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+     padding: 15px;
+     font-weight: bold;
+}
+ 
+/* Scroll Arrow ends */
